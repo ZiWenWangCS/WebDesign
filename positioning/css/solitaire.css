@@ -1,0 +1,68 @@
+/*style for solitaire*/
+body{
+    background-image: url('../images/gradient.jpg');
+    background-repeat: repeat;
+    background-color: rgb(231, 135, 135);
+    /* fall back for back ground*/
+}
+
+.felt{
+    width:590px;
+    height:400px;
+    background-image: url('../images/felt.jpg');
+    background-color: rgb(14, 87, 0);
+    position: absolute;
+    top:50px;
+    left: 200px;
+    z-index: 1;
+
+}
+
+.card{
+    width: 64px;
+    height: 100px;
+    background-image: url('../images/card.png');
+    position: absolute;
+    top:100px;
+    left:463px; /* 200+590/2-64/2=463 */
+    z-index: 2;
+}
+
+.king{
+    width: 64px;
+    height: 100px;
+    background-image: url('../images/kingspades.png');
+    position: absolute;
+    top:130px;
+    left:463px;
+    z-index: 3;
+}
+
+.queen{
+    width: 64px;
+    height: 100px;
+    background-image: url('../images/queenhearts.png');
+    position: absolute;
+    top:160px;
+    left: 463px;
+    z-index: 4;
+}
+
+.jack{
+    width: 64px;
+    height: 100px;
+    background-image: url('../images/jackclubs.png');
+    position: absolute;
+    top: 190px;
+    left: 463px;
+    z-index: 5;
+}
+.diamond_ten{
+    width: 64px;
+    height: 100px;
+    background-image: url('../images/tendiamonds.png');
+    position: absolute;
+    top: 220px;
+    left: 463px;
+    z-index: 6;
+}

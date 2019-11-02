@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DJ Turntable :: Musical and Entertainment Services</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <style type="text/css">
+    
+    #content_background{
+      background-image: url('images/content_back.jpg');
+      background-repeat: no-repeat;
+      height: 600px;
+    }
+    
+    #audio{
+      float: left;
+      font-size: 50px;
+      width: 1000px;
+      padding: 200px 0 20px;
+      text-align: center;
+      height: 400px;
+    }
+
+    #audio a:link, #audio a:visited{
+      color: rgb(0, 255, 21);
+    }
+
+    #audio a:hover{
+      text-decoration: none;
+    }
+
+    #info_box{
+      width: 200px;
+      float: right; 
+    }
+
+    #more{
+      display: none;
+    }
+
+    button{
+      border: none;
+      font-size: 20px;
+      border-radius: 4px;
+      background-color:rgb(0, 255, 21);
+      cursor: pointer;
+    }
+
+    .black_back{
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .zoom_in{
+      animation: animatezoom 0.6s;
+    }
+
+    @keyframes animatezoom{
+      from{transform: scale(0)}
+      to{transform: scale(1)}
+    }
+
+    .close{
+      float: right;
+      cursor: pointer;
+    }
+
+    
+    #content_block1{
+      background-image: url("images/dj.jpg");
+    }
+
+    #content_block2{
+      background-image: url("images/events.jpg");
+    }
+
+    #content_block3{
+      background-image: url("images/review1.jpg");
+    }
+
+   .content_block a{
+     text-decoration: none;
+   }
+
+   .youtube_vid{
+     margin: 70px;
+   }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <!--navigation bar start-->
+    <div class="navbar">
+      <a id="logo" href="index.html"><img src="images/icon.png" alt="logo"></a> 
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="window.location.href='html/about.html'">About</button>
+        <div class="dropdown_content">
+          <a href="html/mystory.html">My Story</a>
+        </div>
+      </div>
+      <a href="html/package.html">Packages</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="window.location.href='html/event.html'">Event</button>
+        <div class="dropdown_content">
+          <a href="html/weddings.html">Weddings</a>
+          <a href="html/schools.html">School Celebrations</a>
+          <a href="html/corporate.html">Corporate Events</a>
+          <a href="html/special.html">Special Occasions</a>
+        </div>
+      </div>
+      <a href="html/review.html">Reviews</a> 
+      <a href="html/gallery.html">Gallery</a> 
+      <a href="html/resources.html">Resources</a> 
+      <a href="html/contact.html">Contact</a> 
+    </div>
+    <!--navigation bar end and header starts-->
+    <div class="header">
+        <img src="images/DJ_Turntable_LOGO_3.png" alt="logo">
+        <div class="information">
+          <p>Contact:<br />(888) 555-GIGS</p>
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+          <p>Business hour:</p>
+          <p>Mon-Fri:10:00AM-6:00PM</p>  
+          <p>Sat:9:00AM-1:00pm or by appointment</p>
+        </div>
+    </div>
+    <!--header ends contents starts-->
+    <div class="content">
+      <div id="content_background">
+          <div id="audio">
+            <a href="#" onclick="document.getElementById('vid1').style.display='block'">
+              SEE
+            </a>
+             MORE OF THE FUN AND 
+             <a href="#" onclick="document.getElementById('vid2').style.display='block'">HEAR</a>
+             SOME OF THE MUSIC!
+
+              <div id="vid1" class="black_back"> 
+              <form class="zoom_in" action="vid1.php">
+                 <span onclick="document.getElementById('vid1').style.display='none'" class="close">&times;</span>
+                 <iframe width="1200" height="800" src="https://www.youtube.com/embed/ta7ITAYTATM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </form>
+            </div>
+
+            <div id="vid2" class="black_back"> 
+              <form class="zoom_in" action="vid2.php">
+                <span onclick="document.getElementById('vid2').style.display='none'" class="close">&times;</span>
+                <iframe width="1200" height="800" src="https://www.youtube.com/embed/IakvkZ9bdOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </form>
+            </div>
+          </div>
+          <!--read more button-->
+          <div id="info_box">
+            <h2>WE MAKE MUSIC THE HEARTBEAT OF YOUR CELEBRATIONS!</h2>
+            <p>DJ Turntable is a full service disc jockey and entertainment company that delivers fantastic music, great sound, and amazing lighting with spot-on professionalism.
+              <span id="more">
+                Whether you're planning a wedding, school celebration, corporate event, or private party, DJ Turntable will make music the heartbeat of your celebration. We use the state-of-the-art equipment to pump out the songs that you wanted to hear. with a digital music library of over 50,000 songs, you'll undoubtedly be able to create the playlist you've been dreaming of. Our years of experience guarantee that you get stress-free event planning and happy, dancing guests.
+              </span>
+            </p>
+            <button onclick="myFunction()" id="my_btn">READ MORE</button>
+          </div>
+      </div>
+      <div class="youtube_vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9O4_awEHh1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XQdtDCNQQh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <!--3 content box linked to about, event, reviews-->
+      <div class="content_block" id="content_block1">
+        <h3>Dylan Jackson has a passion for music and loves sharing it with great people. Read his sotry and get to know DJ TURNTABLE...</h3>
+        <div class="middle">
+          <a href="html/about.html"><div class="text">ABOUT</div></a>
+        </div>
+      </div>
+      <div class="content_block" id="content_block2">
+          <h3>DJ TURNTABLE has loads of experience playing for all types of audiences at all kinds of celebrations. See how much fun you can have...</h3>
+          <div class="middle">
+              <a href="html/event.html"><div class="text">EVENTS</div></a>
+          </div>
+        </div>
+      <div class="content_block" id="content_block3">
+          <h3>We're not bragging, but our clients are! Here's the beat on the street..."Our students were thrilled, and teachers enjoyed the evening!"</h3>
+          <div class="middle">
+              <a href="html/review.html"><div class="text">REVIEWS</div></a>
+          </div>
+      </div>
+    </div>
+    <div class="float_clear"></div>
+    <br />
+    <!--footer-->
+    <footer>
+        <div class="half_footer">
+          <ul>
+            <a href="html/about.html"><li>ABOUT</li></a>
+            <a href="html/contact.html"><li>CONTACT</li></a>
+            <a href="html/event.html"><li>EVENT</li></a>
+          </ul>
+        </div>
+        <br />
+        <p>
+            &copy;2019.DJ TURNTABLE,inc.All Rights Reserved.
+            Adress:3026 North Ashland Avenue Chicago, IL 60657
+            Phone: 204-123-4567
+            Fax: 204-123-1111
+            Email: dj@djturntable.com
+        </p>
+    </footer>
+  </div>
+  <!--js for video-->
+  <script>
+    function myFunction() {
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("my_btn");
+
+        btnText.style.display = "none"; 
+        moreText.style.display = "inline";
+    }
+    var vid1 = document.getElementById("vid1");
+    var vid2 = document.getElementById("vid2");
+      window.onclick = function(event) {
+        if (event.target == vid1) {
+            vid1.style.display = "none";
+        }
+        else if (event.target == vid2) {
+          vid2.style.display ="none";
+        }
+      }  
+  </script>
+</body>
+</html>

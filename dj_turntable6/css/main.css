@@ -1,0 +1,180 @@
+body{
+    background-color: black;
+}
+
+h1, h2, h3, h4, p{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2, h3, h4{  
+    font-style: italic;
+}
+
+.container{
+    margin: auto;
+    width: 1280px;
+}
+
+.header{
+    width: 1280px;
+    background-image: url('../images/animated-audio-sound-waveform-spectrum-sound-waves-on-green-background_sfmb9dzs__F0010.png');
+}
+
+.header p{
+    margin: 3px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    font-size: 14px;
+}
+
+.information{
+    width: 200px;
+    float: right;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 192, 54);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar img{
+    float: left;
+}
+
+.navbar a{
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 46px 14px;
+    text-decoration: none;
+}
+
+#logo{
+    padding: 0;
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 46px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(99, 170, 80);
+    cursor: pointer;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 205px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.content{
+    margin: auto;
+    width: 1280px;
+}
+
+footer{
+    background-color: rgb(0, 192, 54);
+    height: 60px;
+}
+
+.half_footer{
+    width: 300px;
+    height: 5px;
+    padding-left: 480px;
+}
+
+footer p{
+    text-align: center;
+}
+
+*{
+    color: white;
+}
+
+footer li{
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+footer li:hover{
+    text-decoration: underline;
+}
+
+.content_block{
+    float: left;
+    width: 386px;
+    height: 800px;
+    margin: 0 20px;
+}
+
+.middle{
+    transition: 0.3s ease;
+    opacity: 0; /** set to transparent **/
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+
+#content_block1:hover .middle, #content_block2:hover .middle, #content_block3:hover .middle{
+    opacity: 1;
+}
+  
+.text {
+    background-color: rgb(60, 255, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 2%;
+}
+.text:hover{
+    background-color: white;
+}
+
+.float_clear{
+    clear:both;
+}
+
+.left_float{
+    float: left;
+    padding:10px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DJ Turntable :: Musical and Entertainment Services</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <style type="text/css">
+    .info_box{
+        float: left;
+        margin: 0 20px 0 50px;
+    }
+
+    .info_box label,.info_box p{
+        margin: 0px;
+        font-size: 18px;
+    }
+
+    .adress{
+        padding-left: 50px;
+    }
+
+    input[type=text]{
+        margin-bottom: 13px;
+        position: relative;
+        top:-5px;
+        color: black;
+        font-size: 18px;
+    }
+
+    input[type=submit]{
+        color: black;
+        width: 100px;
+        height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(42, 163, 42);
+        border:none;
+        cursor: pointer;
+        position: relative;
+        left: 325px;
+        font-size:18px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a id="logo" href="../index.html"><img src="../images/icon.png" alt="logo"></a>
+            <a href="../index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='about.html'">About</button>
+              <div class="dropdown_content">
+                <a href="mystory.html">My Story</a>
+              </div>
+            </div>
+            <a href="package.html">Packages</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="window.location.href='event.html'">Event</button>
+              <div class="dropdown_content">
+                <a href="weddings.html">Weddings</a>
+                <a href="schools.html">School Celebrations</a>
+                <a href="corporate.html">Corporate Events</a>
+                <a href="special.html">Special Occasions</a>
+              </div>
+            </div>
+            <a href="review.html">Reviews</a> 
+            <a href="gallery.html">Gallery</a> 
+            <a href="resources.html">Resources</a> 
+            <a href="contact.html">Contact</a> 
+        </div>
+        <div class="header">
+            <img src="../images/DJ_Turntable_LOGO_3.png" alt="logo">
+            <div class="information">
+              <p>Contact:<br />(888) 555-GIGS</p>
+              <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" alt="Facebook"></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"><img src="../images/twitter.png" alt="Twitter"></a>
+              <p>Business hour:</p>
+              <p>Mon-Fri:10:00AM-6:00PM</p>  
+              <p>Sat:9:00AM-1:00pm or by appointment</p>
+            </div>
+        </div>
+        <h1>Cell, email, tweet, or just whistle!</h1>
+        <br />
+        <hr />
+        <br />
+        <p class="adress">DJ Turntable / 3026 North Ashland Avenue / Chicago, IL 60657</p>
+        <div class="info_box">
+            <p>Web:</p>
+            <p>Phone:</p>
+            <p>Fax:</p>
+            <p>Email:</p>
+            <p>Twitter:</p>
+            <p>Facebook:</p>
+        </div>
+        <div class="info_box">
+            <a href="../index.html"><p>www.djturntable.com</p></a>
+            <p>(888) 555-GIGS</p>
+            <p>(312) 555-GIGS</p>
+            <a href="mailto:dj@turntable.com"><p>dj@turntable.com</p></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><p>@djturntable</p></a>
+            <a href="https://www.facebook.com/" target="_blank"><p>www.facebook.com/djturntable</p></a>
+        </div>
+        <div class="float_clear"></div>
+        <br />
+        <br />
+        <br />
+        <form action="/action_page.php">
+            <div class="info_box">
+                <label for="name">Name:</label> <br /> <br />
+                <label for="phone">Phone:</label> <br /> <br />
+                <label for="email">Email:</label> <br /> <br />
+                <label for="event">Event:</label> <br /> <br />
+                <label for="event_date">Event Date:</label> <br /> <br />
+            </div>
+            <input type="text" size="25" id="name" name="user_name" placeholder="Your name..."> <br />
+            <input type="text" size="25" id="phone" name="phone_num" placeholder="Your phone..."> <br />
+            <input type="text" size="25" id="email" name="email_name" placeholder="Your email..."> <br />
+            <input type="text" size="25" id="event" name="event_name" placeholder="Your event..."> <br />
+            <input type="text" size="25" id="event_date" name="event_date" placeholder="Your event date..."> <br />
+            <input type="submit" value="Submit">
+        </form>
+        <br />
+        <!--footer-->
+        <footer>
+            <div class="half_footer">
+              <ul>
+                <a href="about.html"><li>ABOUT</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+                <a href="event.html"><li>EVENT</li></a>
+              </ul>
+            </div>
+            <br />
+            <p>
+                &copy;2019.DJ TURNTABLE,inc.All Rights Reserved.
+                Adress:3026 North Ashland Avenue Chicago, IL 60657
+                Phone: 204-123-4567
+                Fax: 204-123-1111
+                Email: dj@djturntable.com
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

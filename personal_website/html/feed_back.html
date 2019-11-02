@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>FEED BACKS</title>
+    <link rel="stylesheet" type="text/css" href="../css/feed_back.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    </head>
+    <body>
+        <ul>
+            <li><a class="spacing" href="../index.html">Home</a></li>
+            <li><a class="spacing" href="news.html">News</a></li>
+            <li><a class="spacing active" href="feed_back.html">Give Us Feedback</a></li>
+        </ul>
+        <div class="box1">
+            <!--sign in form-->
+            <button onclick="document.getElementById('id01').style.display='block'">Sign In</button> <!-- calls up id01-->
+            <div id="id01" class="signin_background"> <!-- sign in box!!-->
+                <form class="signin_box zoom_in" action="signin.php">
+                   <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                   <h2>LOG IN</h2>
+                   <div class="log_form"> <!--BTW this log in does not work its just for the web appearance-->
+                    <div class="inputbox">
+                        <input type="text" name="123" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="123" required="">
+                        <label>Password</label>
+                    </div>
+                    <input type="submit" name="123" value="Log In">
+                    </div>
+                </form>
+            </div>
+            <script>
+                // Get the class
+                var signin_background = document.getElementById('id01');
+
+                // if statements for the user if they click on the background it will close the log in form
+                window.onclick = function(event) {
+                    if (event.target == signin_background) {
+                        signin_background.style.display = "none";
+                    }
+                }
+            </script>
+            <div class="gradient"></div>
+            <div class="formprop">
+            <form method="POST" action="process.php">
+                <fieldset>
+                    <legend>Give Us Your Feedback</legend>
+                    <div id="paddingspace">
+                        <div class="left_col left_float">
+                            First Name:
+                        </div>
+                        <div class="right_col left_float">
+                            <input type="text" size="10" name="first_name"/>
+                        </div>
+                        <br />
+                        <div class="left_col clearfloat distance_year_activity left_float" >
+                            Year:
+                        </div>
+                        <div class="right_col left_float">
+                            <input type="radio" name="year" value="freshman"/>Freshman
+                            <br />
+                            <input type="radio" name="year" value="sophomore"/>Sophomore
+                            <br />
+                            <input type="radio" name="year" value="junior"/>Junior
+                            <br />
+                            <input type="radio" name="year" value="senior"/>senior
+                            <br />
+                        </div>
+                        <div class="left_col clearfloat distance_year_activity left_float" >
+                            Gender:
+                        </div>
+                        <div class="right_col left_float">
+                            <input type="radio" name="gender" value="Female"/>Female
+                            <br />
+                            <input type="radio" name="gender" value="Male"/>Male
+                            <br/>
+                            <input type="radio" name="gender" value="Other"/>Other
+                            <br />
+                        </div>
+                        <div class="clearfloat left_col left_float" id="quater">
+                            Quater:      
+                        </div>
+                        <div class="right_col left_float">
+                                <select name="season">
+                                    <option value="spring">Spring</option>
+                                    <option value="summer">Summer</option>
+                                    <option value="fall" selected>Fall</option>
+                                    <option value="winter">Winter</option>
+                                </select>  
+                        </div>
+                        <div class="clearfloat left_col left_float distance_comments">
+                            Comments:
+                        </div>
+                        <div class="right_col left_float">
+                            <textarea name="more" rows="8" cols="30">Enter your feedback here.</textarea>
+                        </div>
+                        <div class="feedback clearfloat">
+                        <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+        <div class="footer_section">
+            <img src="../images/footer_section.png" alt="riot logo"/>
+            <h5>&copy;COPYRIGHT ZIWEN Contact us:<br />
+                204-123-1234</h5>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+* {
+	padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    font-size: 20px;
+}
+
+.container{
+   width: 100%;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    color: rgb(173, 100, 112);
+    font-size: 130%;
+}
+
+
+nav{
+    width: 20%;
+    margin: 1% 2%;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: rgb(255, 183, 243);
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 120%;
+    margin: 20% auto;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
+nav li:hover a{
+    background-color: white;
+    color: rgb(255, 183, 243);
+}
+
+img{
+    float: left;
+    width: 50%;
+}
+
+section{
+    clear:both;
+    margin: 2% 5%;
+    padding: 2% 5%;
+}
+
+section h1{
+    color: rgb(173, 100, 112);
+    padding: 2% 0; 
+}
+
+section p{
+    padding: 1% 0;
+    color: rgb(141, 81, 91);
+}
+
+section img{
+    width: 33.33333333%;
+    height: 300px;
+}
+
+fieldset{
+    padding: 2%;
+    border-color: pink;
+}
+
+.info_box{
+    float: left;
+    margin: 0 2%;
+}
+
+.info_box label{
+    margin: 0;
+    font-size: 100%;
+    color: rgb(173, 100, 112);
+}
+
+
+input[type=text]{
+    margin-bottom: 1%;
+    position: relative;
+    top:-5px;
+    font-size: 100%;
+    color: rgb(173, 100, 112);
+}
+
+textarea{
+    font-size: 100%;
+    color: rgb(173, 100, 112);
+}
+
+input[type=submit]{
+    width: 10%;
+    font-size: 100%;
+    border: none;
+    background-color: pink;
+    margin-left: 45%;
+}
+
+footer{
+    text-align: center;
+    color: rgb(141, 81, 91);
+    clear:both;
+}
+
+@media only screen and (max-width:860px){
+    header{
+        font-size: 100%;
+    }
+
+    section img{
+        width: 50%;
+        height: 200px;
+    }
+    
+    section p{
+        font-size: 80%;
+    }
+
+    section h1, footer{
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width:610px){
+    header{
+        font-size: 85%;
+    }
+
+    section img{
+        width: 100%;
+    }
+
+    section p{
+        font-size: 70%;
+    }
+
+    section h1, footer{
+        font-size: 80%;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .bigger{
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anaya Nacho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <!--nav bar starts-->
+    <nav>
+        <img src="images/logo.png" alt="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!--nav bar ends-->
+    <header>
+            <img class="skull" src="images/skull.png" alt="skull">
+        <img src="images/header.jpg" alt="header">
+    </header>
+    <form method="post" aciton="process.php">
+        <fieldset>
+            <div class="info_box">
+                <label for="name">Name:</label> <br /> <br />
+                <label for="phone">Phone:</label> <br /> <br />
+                <label for="email">Email:</label> <br /> <br />
+                <label for="options">Your favorite protien:</label> <br/> <br />
+                <label for="comments">Comments:</label> <br /> <br />
+            </div>
+            <input type="text" size="25" id="name" name="user_name" placeholder="Your name..."> <br />
+            <input type="text" size="25" id="phone" name="phone_num" placeholder="Your phone..."> <br />
+            <input type="text" size="25" id="email" name="email_name" placeholder="Your email..."> <br />
+            <select>
+                <option value="grilled_chick">Grilled Chicken</option>
+                <option value="baffalo_chick">Buffalo Chicken</option>
+                <option value="shred_beef">Shredded Beef</option>
+                <option value="ground_beef">Ground Beef</option>
+            </select> <br />
+            <textarea name="more" rows="10" cols="40" placeholder="Your comment..."></textarea> <br />
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <footer>
+        <h1>Footer</h1>
+        Contact:<span class="phone_num">204-243-2134</span>
+        <br />Adress: 20th 2134 Austin, Texas
+        <p>&copy;Copyright 2019</p>
+    </footer>
+</body>
+</html>

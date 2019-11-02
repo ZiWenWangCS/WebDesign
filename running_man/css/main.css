@@ -1,0 +1,90 @@
+.container{
+    width:800px;
+    height: auto;
+    margin: auto;
+}
+
+.logo{
+    background-image: url("../images/logo.gif");
+    width: 200px;
+    height: 96px;
+    float: left;
+}
+
+.spacer{
+    width: 600px;
+    height: 96px;
+    float: left;
+}
+
+ul > li{
+    width: 199px;
+    height: 29px;
+    background-color: rgb(92, 92, 92);
+    margin: 0 0 1px -40px;
+    padding-top: 1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+ul{
+    list-style-type: none;
+    float: left;
+    margin-right: 1px;
+    margin-top:0;
+    height: 154px;
+}
+
+a:link, a:visited{
+    color:rgba(255,255,255,0.9);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(101, 162, 255);
+}
+
+a:active{
+    text-decoration: underline;
+}
+
+.header{
+    float: left;
+    width: 600px;
+    height: 154px;
+}
+
+.content{
+    clear:both;
+    width: 800px;
+    height: 334px;  
+}
+
+.main_content, .extra_content{
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    float: left;
+}
+
+.main_content{
+    padding-top: 35px;
+    width: 480px;
+}
+
+.extra_content{
+    padding-top: 90px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.footer{
+   background-color: rgb(249,197,23);
+   width: 800px;
+   height: 30px;
+   text-align: center;
+   padding-top: 10px;
+}
+
+ol{
+    list-style-image: url("../images/diamond.png");
+}

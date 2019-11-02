@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+    If i dont get 100 i die
+-->
+<html>
+    <head>
+        <title>Worlds</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="shortcut icon" href="images/icon.png"><!--icon-->
+    </head>
+    <body>
+        
+        <div class="gradient"></div>
+        <ul>
+            <li><a class="spacing active" href="index.html">Home</a></li>
+            <li><a class="spacing" href="html/news.html">News</a></li>
+            <li><a class="spacing" href="html/feed_back.html">Give Us Feedback</a></li>
+        </ul>
+        <div class="box1">
+            <!--sign in form-->
+            <button onclick="document.getElementById('id01').style.display='block'">Sign In</button> <!-- calls up id01-->
+            <div id="id01" class="signin_background"> <!-- sign in box!!-->
+                <form class="signin_box zoom_in" action="signin.php">
+                   <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                   <h2>LOG IN</h2>
+                   <div class="log_form"> <!--BTW this log in does not work its just for the web appearance-->
+                    <div class="inputbox">
+                        <input type="text" name="123" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="123" required="">
+                        <label>Password</label>
+                    </div>
+                    <input type="submit" name="123" value="Log In">
+                    </div>
+                </form>
+            </div>
+            <script>
+                // Get the class
+                var signin_background = document.getElementById('id01');
+
+                // if statements for the user if they click on the background it will close the log in form
+                window.onclick = function(event) {
+                    if (event.target == signin_background) {
+                        signin_background.style.display = "none";
+                    }
+                }
+            </script>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="league logo"/>
+                </a>
+            </div>
+            <a href="index.html">
+               <h1>WORLDS</h1>
+            </a>
+            <div class="container">
+
+                <input type="radio" name="images" id="i1" checked>
+                <input type="radio" name="images" id="i2">
+                <input type="radio" name="images" id="i3">
+
+                <div class="slide_img" id="one">
+                    <a href="https://lol.gamepedia.com/2018_Season_World_Championship" target="_blank">
+                        <img src="images/slide_one.jpg" alt="2018 Worlds"> 
+                    </a>
+
+                    <label for="i3" class="pre"></label>
+                    <label for="i2" class="nxt"></label>
+                </div>
+                <div class="slide_img" id="two">
+                    <img src="images/slide_two.jpg" alt="IG beats KT">
+
+                    <label for="i1" class="pre"></label>
+                    <label for="i3" class="nxt"></label>
+                </div>
+                <div class="slide_img" id="three">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/043ZTou9qbg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <label for="i2" class="pre"></label>
+                    <label for="i1" class="nxt"></label>
+                </div>
+
+                <div class="nav">
+                    <label class="dots"  id="dot1" for="i1"></label>
+                    <label class="dots"  id="dot2" for="i2"></label>
+                    <label class="dots"  id="dot3" for="i3"></label>
+                </div>
+            </div>
+            <br />
+            <div class="table_background">
+                <table>
+                    <caption>World News</caption>
+                    <tr>
+                        <th>News</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://na.leagueoflegends.com/en/featured/2018-global-esports-event-announcement" target="_blank">
+                                <img src="images/2018.jpg" alt="2018 Worlds">
+                                <h3>2018 WORLDS!!!</h3>
+                            </a>
+                            <p>2018 LEAGUE OF LEGENDS WORLDS HAS STARTED! From October 1 to Novemember 3. </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://euw.leagueoflegends.com/en/page/uk-worlds-2018-cinema-viewing-parties" target="_blank">
+                                <img src="images/rekkles.jpg" alt="FNC Rekkles">
+                                <h3>FNATIC GOES TO THE FINAL!</h3>
+                            </a>
+                            <p>FNC wins the semifinal with 3:0 VS C9!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.invenglobal.com/articles/6535/ig-duke-i-believe-both-rng-and-g2-are-strong-it-wont-surprise-me-if-either-of-them-makes-it-up" target="_blank">
+                                <img src="images/rookie.jpg" alt="IG Rookie">
+                                <h3>IG 3:0 G2 AND QuALIFY FOR FINALS&iexcl;</h3>
+                            </a>
+                            <p>IG wins the semifinal and beats G2!</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.lolesports.com/en_US/articles/almost-winners"  target="_blank">
+                                <img src="images/semifinal.jpg" alt="semifinal pic">
+                                <h3>SEMI FINAL COMING UP IN OCT 27-28!</h3>
+                            </a>
+                            <p><em>IG vs G2</em> on Saturday <em>FNC vs C9</em> on Sunday!</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer_section">
+            <img src="images/footer_section.png" alt="riot logo"/>
+            <h5>&copy; COPYRIGHT ZIWEN Contact us:<br />
+                204-123-1234</h5>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <style type="text/css">
+    .header_image{
+        background-image: url("../images/banner.jpg");
+    }
+    .content_image{
+        background-image: url("../images/contact.gif");
+    }
+    .space_pos{
+        position: relative;
+        left: 100px;
+    }
+    input{
+        margin: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="spacer"></div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="phliosophy.html">Our Philosophy</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="#">HelpDesk</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="header header_image"></div>
+        <div class="content content_image">
+            <div class="main_content">
+                <form method="POST" action="process.php">
+                    <div class="space_pos">
+                        Name: <input type="text" size="35" name="name" /><br />
+                        E-mail:<input type="text" size="35" name="email" /><br />
+                        Phone: <input type="text" size="35" name="phone" /><br />
+                        Adress:<input type="text" size="35" name="adress" /><br />
+                        Province: <select name="province">
+                            <option value="mb">MB</option> <!--too lazy to do all provinces-->
+                            <option value="on">ON</option>
+                        </select>
+                        <input type="reset" value="Reset" />
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+            <div class="extra_content">
+                <ol>
+                    <li>NETWORKING...SYSTEMS INTEGRATION...BUSINESS STRATEGY...</li>
+                    <li>VISION THOUGH PROGRESS</li>
+                    <li>Integlligent information Techonology Management.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="footer">
+            Idea.com&copy;2005
+        </div>
+    </div>
+</body>
+</html>

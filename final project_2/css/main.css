@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(145, 106, 67);
+    font-family: 'Times New Roman', Times, serif;
+}
+/** nav bar **/
+nav{
+    width: 100%;
+}
+
+nav ul{
+    padding-top: 5%;
+    list-style-type: none;
+}
+
+nav img{
+    float: left;
+}
+
+nav a{
+    float: left;
+    width: 28%;
+    font-size: 200%;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(215, 187, 71);
+    color: rgb(233, 241, 224);
+}
+
+nav a:hover{
+    background-color: rgb(233, 241, 224);
+    color: rgb(215, 187, 71);
+}
+
+header img{
+    margin: 2% auto;
+    width: 100%;
+    height: 500px;
+}
+
+
+section h1, section h2{
+    margin: 0 1%;
+    font-size: 180%;
+    color: rgb(215, 187, 71);
+}
+
+section p{
+    font-size: 120%;
+    float: left;
+    width: 48%;
+    margin: 0 1%;
+    color: rgb(233, 241, 224);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    color: rgb(215, 187, 71);
+}
+
+.phone_num{
+    color: rgb(242, 132, 95);
+}
+
+table{
+    width: 100%;
+}
+
+table td{
+    padding: 1% 5%;
+}
+
+table h2{
+    color: rgb(215, 187, 71);
+}
+
+.menu_comment{
+    font-style: italic;
+    text-align: center;
+    font-size: 90%;
+}
+
+.menu_title{
+    color: rgb(215, 187, 71);
+    text-align: center;
+    font-size: 200%;
+}
+
+.instructions h1{
+    font-weight: bold;
+    color:  rgb(215, 187, 71);
+    text-align: center;
+}
+
+.instructions ol, .instructions p, .instructions h3{
+    margin-left: 30%;
+}
+
+.info_box{
+    float: left;
+    margin: 0 2%;
+}
+
+.info_box label{
+    margin: 0;
+    font-size: 120%;
+    color: rgb(215, 187, 71);
+}
+
+
+input[type=text]{
+    margin-bottom: 1%;
+    font-size: 100%;
+}
+
+select{
+    margin-bottom: 1%;
+    position: relative;
+    top:-50%;
+    font-size: 100%;
+}
+
+textarea{
+    font-size: 100%;
+}
+
+input[type=submit]{
+    width: 10%;
+    font-size: 100%;
+    border: none;
+    background-color: rgb(215, 187, 71);
+    margin-left: 45%;
+}

@@ -1,0 +1,357 @@
+.box1{
+    width:960px;
+    margin:0px auto;
+    clear:both;
+}
+
+.main_content{
+    width:auto;
+    height:auto;
+}
+
+.footer_section{
+    width: 100px;;
+    height:50px;
+    margin:0 auto;
+}
+
+h1,h2{
+    font-weight: bold;
+    font-size: 30px; 
+    color: rgb(255, 255, 255);
+}
+h1{
+    font-size: 55px;
+    font-weight: lighter;
+}
+h1,h2,h5{
+    text-align: center;
+}
+.gradient{
+    background-color: rgb(99, 99, 99); /*back up*/
+    background-image: linear-gradient(to top, #808080, #5f5f5f, #3f3f3f, #222222, #000000);
+    background-repeat: unset;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    overflow: auto; /* enable scroll */
+    z-index: -1;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+
+.logo{
+    float: left;
+    position: absolute;
+    top: 100px;
+}
+
+a:link{
+    text-decoration: none;
+    color:rgb(5, 138, 179);
+}
+a:visited{
+    color:rgb(115, 159, 255);
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(5, 138, 179);
+}
+a:active{
+    text-decoration: none;
+}
+
+input[type="submit"], button{
+    border: 3px solid rgb(0, 195, 255);
+    padding:5px;
+    cursor: pointer;
+    background-image: radial-gradient(circle, #00afff, #00a5ff, #009aff, #008eff, #0d81ff);
+    color: rgb(255, 255, 255);
+    width:120px;
+    font-weight: bold;
+    font-size: 18px;
+}
+button{
+   position: relative;
+   top: -40px;
+   left:830px;
+}
+
+button:hover{
+    box-shadow: 0px 0px 50px rgb(0, 183, 255);
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 200px;
+    padding-bottom: 40%;
+    background: rgb(185, 185, 185);
+    border: solid 5px rgb(255,255,255);
+    border-radius: 10px;
+}
+
+.slide_img, .slide_img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#i1, #i2, #i3{
+    display: none;
+}
+
+.pre, .nxt{
+    width: 12%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    background: rgba(88,88,88,.5); /* fourth value for opacity */
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+.nxt{
+    right: 0;
+}
+.pre{
+    left: 0;
+}
+
+/* position of dots */
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center; /* dots centered*/
+    z-index: 99;
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%; /* make it to look like a circle/dot*/
+    display: inline-block;
+    background: rgba(255,255,255,.8);
+    cursor: pointer;
+}
+
+/* when radio button with id'i1' is checked then
+z-index of # one is 9, and if unchecked z-index -1*/
+.slide_img{
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+    z-index: 9;
+}
+
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+    background: rgb(77, 75, 75);
+}
+
+#i1:hover ~ .nav #dot1,
+#i2:hover ~ .nav #dot2,
+#i3:hover ~ .nav #dot3{
+    background: rgb(161, 161, 161);
+}
+
+
+/* set new font*/
+@font-face{
+    font-family: league_font;
+    src: url(../font/league_font.woff);
+}
+/* apply to all element*/
+*{
+    font-family: league_font, 'Times New Roman', Times, serif; /* serif for back up*/
+    font-family: inherit;
+}
+
+.table_background{
+    background-image: url("../images/frame.png");
+    background-repeat: no-repeat;
+    height: 1000px; 
+    width: 960px;
+    background-size: 100%;
+}
+
+table{
+    border: 4px rgba(138, 138, 138, 0.6) solid;
+    width: 830px;
+    position: relative;;
+    top: 55px;
+    left: 65px; /* 960-830/2=65px*/
+    background-color: rgba(255, 255, 255, 0.7);
+} 
+
+tr,td{
+    border:none;
+    border-bottom:1px solid rgba(0,0,0,0.2) ;
+}
+
+table img{
+    float:left;
+    height: 166.5px;
+    width: 240px;
+    margin:20px;
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.7);
+    color:rgba(255,255,255,0.9);
+    font-size: 20px;
+}
+
+caption{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif; /* another font for p element*/
+    font-style: italic;
+}
+
+
+.signin_background{
+    display: none;  /* if user clicked on the sign in button this will come up*/
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.signin_box{
+    margin: 5% auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(26, 26, 26, 0.4);
+    border-radius: 10px;
+}
+
+.zoom_in{
+    animation: animatezoom 0.6s;
+}
+
+/* zoom in animation */
+@keyframes animatezoom{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
+/* for close button*/
+.close{
+ position: relative;
+ left: 90%;
+ top: 0px;
+ color: white;
+ font-size: 40px;
+ font-weight: bold;
+}
+.close:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.log_form{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,0%);
+}
+
+.log_form .inputbox{
+    position: relative;
+}
+
+.log_form .inputbox input{
+    width: 100%;
+    padding:10px 0;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom:1px solid rgb(255, 255, 255);
+    outline: none;
+    background: transparent; /** make the input box to be transparetn**/
+}
+
+.inputbox > label{ /** all the label elements in the inputbox class is styled the following **/
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    font-size: 16px;
+    transition: 0.5s; 
+}
+
+input:focus ~ label, /** animation when user click on the input box the label will go up **/
+input:valid ~ label /** if there were text typed inside the input box then label will no longer go back to origional style **/
+{
+    top: -15px;
+    color: rgb(0, 183, 255);
+    font-size: 15px;
+}
+
+/** navigation menu**/
+
+ul{
+    list-style-type: none;
+    margin: auto;
+    width:550px;
+}
+
+li{
+    float: left;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 1px 1px;
+}
+
+li .spacing{
+    text-align: center;
+    padding: 8px 50px;
+    display:block;
+    font-weight: bold;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(0, 183, 255);
+    color: rgb(255, 255, 255);
+    height: 25px;
+}
+
+li a.active {
+    color: rgb(255,255,255);
+    background-color: rgb(0, 183, 255);
+    height: 25px;
+}
+caption{
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
